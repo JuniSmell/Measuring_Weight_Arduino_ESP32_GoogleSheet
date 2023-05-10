@@ -20,7 +20,7 @@ $$ \frac{總重量}{單一輪框數量}=數量$$
 利用Load Cell與HX711，獲得待測物的重量，將重量上傳至Arduino，Arduino會將重量換算成數量，將結果顯示在LCD上。如果重量與數量正確，則可選擇將重量與數量傳至ESP32，ESP32具有連上網路的功能，連上網後，能將數據利用Google App Script提供的街口，上傳至Google Sheet。
 
 # 安裝方法
-![[assembly_graph.drawio.png]]
+![assembly_graph](images/assembly_graph.png)
 * 簡單來說，就是將LCD Keypad Shield 直接插上Arduino Uno，此時LCD Keypad Shield變成Arduino Uno的擴增板，右上角的7個Pin腳分別是「pin 0, pin 1, pin 2, pin 3, pin 11, pin 12, pin 13」。
 * Esp32的pin 16 <--> LCD Keypad Shield的pin 1。
 * ESP32的pin 17 <--> LCD Keypad Shield的pin 0。
